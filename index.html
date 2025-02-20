@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .err {
+            color: red;
+            visibility: hidden;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="email" onkeyup="changeText()">
+
+    <p id="err" class="err">enter a valid email</p>
+
+
+
+
+
+
+    <script>
+
+
+        function changeText() {
+            let email = document.getElementById('email')
+            let err = document.getElementById('err')
+
+            let emailRegX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+
+            let result = emailRegX.test(email.value)
+
+            if (result) {
+                err.style.visibility = 'hidden'
+            } else {
+
+                err.style.visibility = 'visible'
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

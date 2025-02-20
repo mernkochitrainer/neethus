@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --bg-color: red;
+    --theme-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+.navbar {
+
+    font-family: var(--theme-font);
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: var(--bg-color);
+}
+
+.logo {}
+
+.menus {
+
+
+    margin-top: 10px;
+
+    /* border: 1px solid; */
+
+}
+
+.list {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+
+.section-1 {
+
+
+
+    text-align: center;
+}
+
+.section-11 {
+
+
+    padding: 20px 0;
+
+    box-shadow: 0px 0px 40px 0px yellow;
+}
+
+.section-11 h1 {
+    text-shadow: 5px 5px 7px red;
+}
+
+.section-12 {
+
+
+    padding: 20px 0;
+}
+
+.section-2 {
+    text-align: center;
+}
+
+.section-21,
+.section-22,
+.section-23,
+.section-24 {
+    border: 1px solid;
+    padding: 1rem;
+}
+
+.section-2 div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.section-2 h1 {
+    border: 1px solid;
+    width: fit-content;
+}
+
+.section-3 {
+    background-color: var(--bg-color);
+    padding: 20px;
+    width: 300px;
+
+
+}
+
+.section-3 h1 {
+    border: 1px solid;
+
+    margin: 30px;
+}
+
+
+
+
+.box {
+    width: 100px;
+    height: 100px;
+
+    background-color: red;
+
+    border: 1px solid;
+}
+
+.container {
+    background-color: aquamarine;
+    height: 2000px;
+}
+
+.box-3 {
+    background-color: yellow;
+
+    cursor: pointer;
+
+
+    animation-name: abc;
+    animation-duration: 2s;
+
+    animation-timing-function: linear;
+
+
+    animation-iteration-count: infinite;
+
+    border-radius: 50%;
+
+}
+
+@keyframes abc {
+
+    0% {
+        /* rotate: 0deg; */
+
+        background-color: aqua;
+
+    }
+
+    50% {
+        translate: 200px -200px;
+    }
+
+
+    100% {
+        /* rotate: 360deg; */
+        background-color: rgb(255, 119, 0);
+
+        /* translate: 0px; */
+
+    }
+
+}
